@@ -1,0 +1,32 @@
+[
+    {
+        "zipcode":"26030",
+        "city":"Beech Bottom",
+        "state":"WV",
+        "county":"Brooke"
+    },
+    {
+        "zipcode":"26501",
+        "city":"Morgantown",
+        "state":"WV",
+        "county":"Monongalia"
+    },
+    {
+        "zipcode":"26003",
+        "city":"Wheeling",
+        "state":"WV",
+        "county":"Ohio"
+    },
+    {
+        "zipcode":"16720",
+        "city":"Austin",
+        "state":"PA",
+        "county":"Potter"
+    },
+    {
+        "zipcode":"16992",
+        "city":"Galeton",
+        "state":"PA",
+        "county":"Potter"
+    }
+]
