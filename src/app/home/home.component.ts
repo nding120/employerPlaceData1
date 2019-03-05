@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { PostService } from '../share/post.service';
-import { HttpClient } from '@angular/common/http';
+
 
 @Component({
   selector: 'app-home',
@@ -9,16 +8,10 @@ import { HttpClient } from '@angular/common/http';
 })
 export class HomeComponent implements OnInit {
 
-  constructor(private postService:PostService, private http: HttpClient) { }
-  public showPostData;///showData: model;
-  error: Error;
+  constructor() { }
+ 
   ngOnInit() {
-    this.postService.getPost()
-    .subscribe(
-      (postData)=>{this.showPostData=postData;},
-      error=>{this.error=error}
-    )
-    console.log(this.showPostData);
+    
   }
 
 }

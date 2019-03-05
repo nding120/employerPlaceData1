@@ -1,3 +1,16 @@
 <p>
   wvzipcode works!
 </p>
+<div class="container">
+  <div class="row">
+    <td class="postDataList">
+      <tr class="postDataList-items"
+          *ngFor="let showData of showPostData">
+          {{showData.zipcode}}
+          {{showData.city}}
+          {{showData.state}}
+          {{showData.county}}
+      </tr>
+    </td>
+  </div>
+</div>
