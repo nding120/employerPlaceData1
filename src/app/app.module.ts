@@ -7,7 +7,7 @@ import { HomeComponent } from './home/home.component';
 import { NavComponent } from './components/nav/nav.component';
 import { PostService } from './share/post.service';
 import { HttpClientModule } from '@angular/common/http';
-import { NetworkComponent } from './planstable/network/network.component';
+//import { NetworkComponent } from './planstable/network/network.component';
 import { WVzipcodeComponent } from './planstable/wvzipcode/wvzipcode.component';
 import { SgVisionComponent } from './planstable/sg-vision/sg-vision.component';
 import { SgDentalComponent } from './planstable/sg-dental/sg-dental.component';
@@ -18,11 +18,11 @@ import { SgVnDComponent } from './planstable/sg-vn-d/sg-vn-d.component';
     AppComponent,
     HomeComponent,
     NavComponent,
-    NetworkComponent,
+    //NetworkComponent,
     WVzipcodeComponent,
     SgVisionComponent,
     SgDentalComponent,
-    SgVnDComponent,
+    SgVnDComponent
   ],
   imports: [
     BrowserModule,
