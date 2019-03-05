@@ -10,8 +10,10 @@ export class PostService {
 
   constructor(private http: HttpClient) { }
 
-  postDataUrl='../assets/data1.json';
+  postDataUrl='../../assets/data1.json';
+
   // get data from backEnd or other path(urls)
+
   getPost(){
     return this.http.get(this.postDataUrl)  
     //after get we can pipe data and catchError()
@@ -29,7 +31,7 @@ export class PostService {
     else{
       console.error(
         `Backend returned code ${error.status}`+
-        `bosy was: ${error.error}`
+        ` bosy was: ${error.error}`
       );
     }
     return throwError(
