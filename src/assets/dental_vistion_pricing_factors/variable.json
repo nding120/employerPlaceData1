@@ -1,0 +1,9 @@
+[
+    {"Variable Name":"In Area/OOA","Variable Option":"In Area","Factor":" 1.0000 "},
+    {"Variable Name":"In Area/OOA","Variable Option":"OOA","Factor":" 1.1000 "},
+    {"Variable Name":"Voluntary Status","Variable Option":"Employer-paid","Factor":" 1.0000 "},
+    {"Variable Name":"Voluntary Status","Variable Option":"Voluntary","Factor":" 1.1500 "},
+    {"Variable Name":"Cross-selling Credit","Variable Option":"Has UPMC medical","Factor":" 0.9800 "},
+    {"Variable Name":"Cross-selling Credit","Variable Option":"Does not have UPMC medical","Factor":" 1.0000 "},
+    
+    ]
