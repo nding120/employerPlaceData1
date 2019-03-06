@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SgVnDComponent } from './sg-vn-d.component';
+import { SgvisiondentalComponent } from './sgvisiondental.component';
 
-describe('SgVnDComponent', () => {
-  let component: SgVnDComponent;
-  let fixture: ComponentFixture<SgVnDComponent>;
+describe('SgvisiondentalComponent', () => {
+  let component: SgvisiondentalComponent;
+  let fixture: ComponentFixture<SgvisiondentalComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ SgVnDComponent ]
+      declarations: [ SgvisiondentalComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(SgVnDComponent);
+    fixture = TestBed.createComponent(SgvisiondentalComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

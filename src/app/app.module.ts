@@ -7,24 +7,22 @@ import { HomeComponent } from './home/home.component';
 import { NavComponent } from './components/nav/nav.component';
 import { PostService } from './share/post.service';
 import { HttpClientModule } from '@angular/common/http';
-//import { NetworkComponent } from './planstable/network/network.component';
 import { WVzipcodeComponent } from './planstable/wvzipcode/wvzipcode.component';
-import { SgVisionComponent } from './planstable/sg-vision/sg-vision.component';
-import { SgDentalComponent } from './planstable/sg-dental/sg-dental.component';
-import { SgVnDComponent } from './planstable/sg-vn-d/sg-vn-d.component';
 import { NetworkComponent } from './PlanTable/network/network.component';
+import { SgdentalComponent } from './PlansTable/sgdental/sgdental.component';
+import { SgvisionComponent } from './PlansTable/sgvision/sgvision.component';
+import { SgvisiondentalComponent } from './PlansTable/sgvisiondental/sgvisiondental.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     NavComponent,
-    //NetworkComponent,
     WVzipcodeComponent,
-    SgVisionComponent,
-    SgDentalComponent,
-    SgVnDComponent,
-    NetworkComponent
+    NetworkComponent,
+    SgdentalComponent,
+    SgvisionComponent,
+    SgvisiondentalComponent
   ],
   imports: [
     BrowserModule,
