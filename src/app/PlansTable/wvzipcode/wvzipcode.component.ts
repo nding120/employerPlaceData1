@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { PostService } from '../../share/post.service';
 import { HttpClient } from '@angular/common/http';
 
-
 @Component({
   selector: 'app-wvzipcode',
   templateUrl: './wvzipcode.component.html',
@@ -16,10 +15,10 @@ export class WVzipcodeComponent implements OnInit {
   ngOnInit() {
     this.postService.getPost()
     .subscribe(
-      (postData)=>{this.showPostData=postData;},
+      (postData)=>{this.showPostData=postData; console.log(this.showPostData);},
       error=>{this.error=error}
     )
-    console.log(this.showPostData);
+   
   }
 }
 

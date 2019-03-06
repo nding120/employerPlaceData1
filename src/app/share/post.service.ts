@@ -11,8 +11,10 @@ export class PostService {
   constructor(private http: HttpClient) { }
 
   postDataUrl='../../assets/data1.json';
-  
   postNetworkUrl='../../assets/network.json';
+  postDentalUrl='../../assets/dentalRate.json';
+  postVisionUrl='../../assets/visionRate.json';
+
 
   // get Zipcode data from backEnd or other path(urls)
   getPost(){
@@ -31,6 +33,23 @@ export class PostService {
       catchError(this.handleError)
     );
   }
+
+  //get dental data
+  getPostDental(){
+    return this.http.get(this.postDentalUrl)
+    .pipe(
+      catchError(this.handleError)
+    );
+  }
+  
+  //get vision data
+  getPostVision(){
+    return this.http.get(this.postVisionUrl)
+    .pipe(
+      catchError(this.handleError)
+    );
+  }
+  
 
   // errorHandler function:
   private handleError(error:HttpErrorResponse){

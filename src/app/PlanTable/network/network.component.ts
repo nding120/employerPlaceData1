@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { PostService } from 'src/app/share/post.service';
+import { PostService } from '../../share/post.service';
 import { HttpClient } from '@angular/common/http';
 
 @Component({
@@ -13,11 +13,12 @@ export class NetworkComponent implements OnInit {
   public showNetworkData;///showData: model;
   error: Error;
   ngOnInit() {
-    this.postService.getPost()
+    this.postService.getPostNetwork()
     .subscribe(
-      (postData)=>{this.showNetworkData=postData;},
+      (posData)=>{this.showNetworkData=posData;
+        console.log(this.showNetworkData);},
       error=>{this.error=error}
     )
-    console.log(this.showNetworkData);
+    
   }
 }
