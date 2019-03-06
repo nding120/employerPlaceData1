@@ -1,0 +1,7 @@
+[
+    {"Employee Count":"2","Group Size":"2-9","Factor":" 1.0500 "},
+    {"Employee Count":"10","Group Size":"10-24","Factor":" 1.0200 "},
+    {"Employee Count":"25","Group Size":"25-50","Factor":" 1.0200 "},
+    {"Employee Count":"51","Group Size":"51-99","Factor":" 1.0000 "}
+    
+    ]

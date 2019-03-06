@@ -1,32 +1,38 @@
 [
-    {
-        "zipcode":"26030",
-        "city":"Beech Bottom",
-        "state":"WV",
-        "county":"Brooke"
-    },
-    {
-        "zipcode":"26501",
-        "city":"Morgantown",
-        "state":"WV",
-        "county":"Monongalia"
-    },
-    {
-        "zipcode":"26003",
-        "city":"Wheeling",
-        "state":"WV",
-        "county":"Ohio"
-    },
-    {
-        "zipcode":"16720",
-        "city":"Austin",
-        "state":"PA",
-        "county":"Potter"
-    },
-    {
-        "zipcode":"16992",
-        "city":"Galeton",
-        "state":"PA",
-        "county":"Potter"
-    }
-]
+    {"Zip":"26030","City":"BEECH BOTTOM","State":"WV","County":"Brooke"},
+    {"Zip":"26032","City":"BETHANY","State":"WV","County":"Brooke"},
+    {"Zip":"26035","City":"COLLIERS","State":"WV","County":"Brooke"},
+    {"Zip":"26037","City":"FOLLANSBEE","State":"WV","County":"Brooke"},
+    {"Zip":"26058","City":"SHORT CREEK","State":"WV","County":"Brooke"},
+    {"Zip":"26070","City":"WELLSBURG","State":"WV","County":"Brooke"},
+    {"Zip":"26075","City":"WINDSOR HEIGHTS","State":"WV","County":"Brooke"},
+    {"Zip":"26034","City":"CHESTER","State":"WV","County":"Hancock"},
+    {"Zip":"26047","City":"NEW CUMBERLAND","State":"WV","County":"Hancock"},
+    {"Zip":"26050","City":"NEWELL","State":"WV","County":"Hancock"},
+    {"Zip":"26056","City":"NEW MANCHESTER","State":"WV","County":"Hancock"},
+    {"Zip":"26062","City":"WEIRTON","State":"WV","County":"Hancock"},
+    {"Zip":"26501","City":"MORGANTOWN","State":"WV","County":"Monongalia"},
+    {"Zip":"26502","City":"MORGANTOWN","State":"WV","County":"Monongalia"},
+    {"Zip":"26504","City":"MORGANTOWN","State":"WV","County":"Monongalia"},
+    {"Zip":"26505","City":"MORGANTOWN","State":"WV","County":"Monongalia"},
+    {"Zip":"26506","City":"MORGANTOWN","State":"WV","County":"Monongalia"},
+    {"Zip":"26507","City":"MORGANTOWN","State":"WV","County":"Monongalia"},
+    {"Zip":"26508","City":"MORGANTOWN","State":"WV","County":"Monongalia"},
+    {"Zip":"26003","City":"WHEELING","State":"WV","County":"Ohio"},
+    {"Zip":"26059","City":"TRIADELPHIA","State":"WV","County":"Ohio"},
+    {"Zip":"26060","City":"VALLEY GROVE","State":"WV","County":"Ohio"},
+    {"Zip":"26074","City":"WEST LIBERTY","State":"WV","County":"Ohio"},
+    {"Zip":"16720","City":"AUSTIN","State":"PA","County":"Potter"},
+    {"Zip":"16746","City":"ROULETTE","State":"PA","County":"Potter"},
+    {"Zip":"16748","City":"SHINGLEHOUSE","State":"PA","County":"Potter"},
+    {"Zip":"16915","City":"COUDERSPORT","State":"PA","County":"Potter"},
+    {"Zip":"16922","City":"GALETON","State":"PA","County":"Potter"},
+    {"Zip":"16923","City":"GENESEE","State":"PA","County":"Potter"},
+    {"Zip":"16927","City":"HARRISON VALLEY","State":"PA","County":"Potter"},
+    {"Zip":"16937","City":"MILLS","State":"PA","County":"Potter"},
+    {"Zip":"16941","City":"GENESEE","State":"PA","County":"Potter"},
+    {"Zip":"16948","City":"ULYSSES","State":"PA","County":"Potter"},
+    {"Zip":"17729","City":"CROSS FORK","State":"PA","County":"Potter"},
+    {"Zip":"26155","City":"NEW MARTINSVILLE","State":"WV","County":"Wetzel"}
+    
+    ]

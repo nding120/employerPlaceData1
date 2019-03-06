@@ -12,6 +12,7 @@ import { WVzipcodeComponent } from './planstable/wvzipcode/wvzipcode.component';
 import { SgVisionComponent } from './planstable/sg-vision/sg-vision.component';
 import { SgDentalComponent } from './planstable/sg-dental/sg-dental.component';
 import { SgVnDComponent } from './planstable/sg-vn-d/sg-vn-d.component';
+import { NetworkComponent } from './PlanTable/network/network.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { SgVnDComponent } from './planstable/sg-vn-d/sg-vn-d.component';
     WVzipcodeComponent,
     SgVisionComponent,
     SgDentalComponent,
-    SgVnDComponent
+    SgVnDComponent,
+    NetworkComponent
   ],
   imports: [
     BrowserModule,

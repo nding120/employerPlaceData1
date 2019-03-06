@@ -10,10 +10,22 @@ export class PostService {
 
   constructor(private http: HttpClient) { }
 
-  postDataUrl='../assets/data1.json';
-  // get data from backEnd or other path(urls)
+  postDataUrl='../../assets/data1.json';
+  
+  postNetworkUrl='../../assets/network.json';
+
+  // get Zipcode data from backEnd or other path(urls)
   getPost(){
     return this.http.get(this.postDataUrl)  
+    //after get we can pipe data and catchError()
+    .pipe(
+      catchError(this.handleError)
+    );
+  }
+  
+  //get network data 
+  getPostNetwork(){
+    return this.http.get(this.postNetworkUrl)  
     //after get we can pipe data and catchError()
     .pipe(
       catchError(this.handleError)
@@ -29,7 +41,7 @@ export class PostService {
     else{
       console.error(
         `Backend returned code ${error.status}`+
-        `bosy was: ${error.error}`
+        ` bosy was: ${error.error}`
       );
     }
     return throwError(
