@@ -10,8 +10,11 @@ import { HttpClient } from '@angular/common/http';
 export class NetworkComponent implements OnInit {
 
   constructor(private postService:PostService, private http: HttpClient) { }
+
   public showNetworkData;///showData: model;
+
   error: Error;
+  
   ngOnInit() {
     this.postService.getPostNetwork()
     .subscribe(
