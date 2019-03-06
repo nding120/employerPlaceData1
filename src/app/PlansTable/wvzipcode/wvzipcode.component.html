@@ -1,22 +1,25 @@
-
 <div class="wrapper">
 
-  <table>
+  <div class="container">
 
-    <tr>
-      <th> Zip Code  </th>
-      <th> City </th>
-      <th> State </th>
-      <th> County </th>
-    </tr>  
-    
+    <table class="main">
+
+      <tr>
+        <th> Zip Code </th>
+        <th> City </th>
+        <th> State </th>
+        <th> County </th>
+      </tr>
+
       <tr *ngFor="let showData of showPostData">
         <td> {{showData.Zip}} </td>
-        <td> {{showData.City}} </td>  
-        <td> {{showData.State}} </td> 
-        <td> {{showData.County}} </td>  
-      </tr>    
+        <td> {{showData.City}} </td>
+        <td> {{showData.State}} </td>
+        <td> {{showData.County}} </td>
+      </tr>
 
-</table>
+    </table>
+
+  </div>
 
 </div>

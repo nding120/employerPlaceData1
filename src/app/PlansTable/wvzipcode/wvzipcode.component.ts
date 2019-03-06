@@ -11,14 +11,20 @@ import { HttpClient } from '@angular/common/http';
 export class WVzipcodeComponent implements OnInit {
 
   constructor(private postService:PostService, private http: HttpClient) { }
+
   public showPostData;///showData: model;
+
   error: Error;
+  
   ngOnInit() {
+
     this.postService.getPost()
+
     .subscribe(
       (postData)=>{this.showPostData=postData;},
       error=>{this.error=error}
     )
+
     console.log(this.showPostData);
   }
 }
