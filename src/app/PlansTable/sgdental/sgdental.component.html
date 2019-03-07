@@ -1,3 +1,29 @@
-<p>
-  sgdental works!
-</p>
+<div class="wrapper-dental">
+
+  <table class="main">
+
+    <tr>
+      <th> SCID </th>
+      <th> Rider Code </th>
+      <th> Plan Name </th>
+      <th> Rating area </th>
+      <th> Single </th>
+      <th> Ee spouse </th>
+      <th> Ee child(ren) </th>
+      <th> Full Family </th>
+    </tr>
+
+    <tr *ngFor="let showDental of showDentalData">
+      <td> {{showDental.SCID}} </td>
+      <td> {{showDental.Rider_Code}} </td>
+      <td> {{showDental.Plan_Name}} </td>
+      <td> {{showDental.Rating_Area}} </td>
+      <td> {{showDental.Single}} </td>
+      <td> {{showDental.Ee_Spouse}} </td>
+      <td> {{showDental.Ee_Child}} </td>
+      <td> {{showDental.Full_Family}} </td>
+    </tr>
+
+  </table>
+  
+  </div>

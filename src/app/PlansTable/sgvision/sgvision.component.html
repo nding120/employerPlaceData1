@@ -1,3 +1,29 @@
-<p>
-  sgvision works!
-</p>
+<div class="wrapper-vision">
+
+  <table class="main">
+
+    <tr>
+      <th> SCID </th>
+      <th> Rider Code </th>
+      <th> Plan Name </th>
+      <th> Rating area </th>
+      <th> Single </th>
+      <th> Ee spouse </th>
+      <th> Ee child(ren) </th>
+      <th> Full Family </th>
+    </tr>
+
+    <tr *ngFor="let showVision of showVisionData">
+      <td> {{showVision.SCID}} </td>
+      <td> {{showVision.Rider_Code}} </td>
+      <td> {{showVision.Plan_Name}} </td>
+      <td> {{showVision.Rating_Area}} </td>
+      <td> {{showVision.Single}} </td>
+      <td> {{showVision.Ee_Spouse}} </td>
+      <td> {{showVision.Ee_Child}} </td>
+      <td> {{showVision.Full_Family}} </td>
+    </tr>
+
+  </table>
+  
+  </div>
