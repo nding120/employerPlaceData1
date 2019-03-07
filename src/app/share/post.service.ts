@@ -14,7 +14,10 @@ export class PostService {
   postNetworkUrl='../../assets/network.json';
   postDentalUrl='../../assets/dentalRate.json';
   postVisionUrl='../../assets/visionRate.json';
-
+  postDVrateUrl="../../assets/dental_vistion_pricing_factors/ratingArea.json";
+  postDVvariUrl="../../assets/dental_vistion_pricing_factors/variable.json";
+  postDVemplyUrl="../../assets/dental_vistion_pricing_factors/employee.json";
+  postDVcorpUrl="../../assets/dental_vistion_pricing_factors/CorpID.json";
 
   // get Zipcode data from backEnd or other path(urls)
   getPost(){
@@ -49,6 +52,36 @@ export class PostService {
       catchError(this.handleError)
     );
   }
+
+  //get V&D rate area
+  getPostDVrate(){
+    return this.http.get(this.postDVrateUrl)
+    .pipe(
+      catchError(this.handleError)
+    );
+  }
+  //get V&D variable
+  getPostDVvari(){
+    return this.http.get(this.postDVvariUrl)
+    .pipe(
+      catchError(this.handleError)
+    );
+  }
+  //get V&D employ
+  getPostDVemply(){
+    return this.http.get(this.postDVemplyUrl)
+    .pipe(
+      catchError(this.handleError)
+    );
+  }
+  //get V&D corpID
+  getPostDVcorp(){
+    return this.http.get(this.postDVcorpUrl)
+    .pipe(
+      catchError(this.handleError)
+    );
+  }
+
   
 
   // errorHandler function:

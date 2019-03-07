@@ -1,3 +1,53 @@
-<p>
-  sgvisiondental works!
-</p>
+<div class="container">
+  <table class="table-rate">
+    <tr>
+      <th>Rating_Area</th>
+      <th>Factor</th>
+    </tr>
+    <tr *ngFor="let showDVrate of showDVrateData">
+      <td>{{showDVrate.Rating_Area}}</td>
+      <td>{{showDVrate.Factor}}</td>
+    </tr>
+  </table>
+
+  <table class="table-vari">
+    <tr>
+      <th>Variable_Name</th>
+      <th>Variable_Option</th>
+      <th>Factor</th>
+    </tr>
+    <tr *ngFor="let showDVvari of showDVvariData">
+      <td>{{showDVvari.Variable_Name}}</td>
+      <td>{{showDVvari.Variable_Option}}</td>
+      <td>{{showDVvari.Factor}}</td>
+    </tr>
+  </table>
+
+  <table class="table-emply">
+    <tr>
+      <th>Employee_Count</th>
+      <th>Group_Size</th>
+      <th>Factor</th>
+    </tr>
+    <tr *ngFor="let showDVemply of showDVemplyData">
+      <td>{{showDVemply.Employee_Count}}</td>
+      <td>{{showDVemply.Group_Size}}</td>
+      <td>{{showDVemply.Factor}}</td>
+    </tr>
+  </table>
+
+  <table class="table-corp">
+    <tr>
+      <th>Corp_ID</th>
+      <th>Association_Name</th>
+      <th>Dental_Factor_Only</th>
+    </tr>
+    <tr *ngFor="let showDVcorp of showDVcorpData">
+      <td>{{showDVcorp.Corp_ID}}</td>
+      <td>{{showDVcorp.Association_Name}}</td>
+      <td>{{showDVcorp.Dental_Factor_Only}}</td>
+    </tr>
+  </table>
+
+  
+</div>
