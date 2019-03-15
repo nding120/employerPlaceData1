@@ -1,14 +1,17 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpErrorResponse } from '@angular/common/http';
+import { HttpClient, HttpErrorResponse, HttpHeaders } from '@angular/common/http';
 import { throwError } from 'rxjs';
 import { catchError} from 'rxjs/Operators';
+
+import { RouterModule, Routes, Router } from '@angular/router';
+import{ Post} from '../share/post.model';
 
 @Injectable({
   providedIn: 'root'
 })
 export class PostService {
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient, private router:Router) { }
 
   postDataUrl='../../assets/data1.json';
   postNetworkUrl='../../assets/network.json';
@@ -18,6 +21,41 @@ export class PostService {
   postDVvariUrl="../../assets/dental_vistion_pricing_factors/variable.json";
   postDVemplyUrl="../../assets/dental_vistion_pricing_factors/employee.json";
   postDVcorpUrl="../../assets/dental_vistion_pricing_factors/CorpID.json";
+
+  postBackendUrl="https://hpexchangetst.upmchp.com/HPExchangeServices/api/Shopping/Plans";
+
+  //test: get data from backEnd url:
+  // getPostBackend(){
+  //   return this.http.get<{allplans:boolean,bydemographics:boolean, MemberId:number}>(
+  //     this.postBackendUrl)
+  //     .pipe(
+  //       catchError(this.handleError)
+  //     );
+  // }
+
+  /////////////test post from backend://////////////////////
+  private post:Post[]=[];
+  public showData;
+   httpOptions={
+    headers:new HttpHeaders({
+      'Content-Type':'application/json'
+    })
+  }
+  addPost(post:Post){
+    return this.http.post<{Post}>(this.postBackendUrl,post,this.httpOptions)
+  }
+  // addPost(allplans:boolean,bydemographics:boolean, MemberId:number){
+  //   const postData= new FormData();
+  //   postData.append("allplans",JSON.stringify(allplans));
+  //   postData.append("bydemographics",JSON.stringify(bydemographics));
+  //   postData.append("MemberId",JSON.stringify(MemberId));
+  //   return this.http.post(this.postBackendUrl,postData)
+  //   .pipe(
+  //     catchError(this.handleError)
+  //   )
+  //   .subscribe(responseData=>{this.showData=responseData; console.log("this is"+this.showData)})
+  // }      
+  
 
   // get Zipcode data from backEnd or other path(urls)
   getPost(){
